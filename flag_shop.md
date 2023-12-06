@@ -1,0 +1,3 @@
+# flag_shop
+(flag: picoCTF{m0n3y_bag5_65d67a74}) <br/>
+In this level, we are given the source code of a shop that will sell us a flag. But we see that we do not have the available balance to find it. The hint given in the question about two's complement tells us that we must overflow the balance variable. We can do that by the INT_MAX (2.147 billion) amount of the fake flags that will get the overall amount to be paid as negative. We keep doing this until we have the amount available for the actual flag and purchase that.
